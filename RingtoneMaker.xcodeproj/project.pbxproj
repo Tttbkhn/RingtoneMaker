@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		98D8A778CA4EA5CBC97A7CAE /* Pods_RingtoneMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640498CA66BBEADD0FC18EDA /* Pods_RingtoneMaker.framework */; };
+		FEE4A91929A0CBC100C0B0F9 /* Container+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE4A91829A0CBC100C0B0F9 /* Container+Dependencies.swift */; };
+		FEE4A91B29A0CC0800C0B0F9 /* Container+Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE4A91A29A0CC0800C0B0F9 /* Container+Services.swift */; };
+		FEE4A91D29A0CC3600C0B0F9 /* Container+ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE4A91C29A0CC3600C0B0F9 /* Container+ViewModels.swift */; };
+		FEE4A92129A0CC7600C0B0F9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE4A92029A0CC7600C0B0F9 /* HomeView.swift */; };
+		FEE4A92429A0CD3C00C0B0F9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEE4A92329A0CD3C00C0B0F9 /* Localizable.strings */; };
 		FEF30145299F6D6B006F8D85 /* RingtoneMakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF30144299F6D6B006F8D85 /* RingtoneMakerApp.swift */; };
 		FEF30147299F6D6B006F8D85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF30146299F6D6B006F8D85 /* ContentView.swift */; };
 		FEF30149299F6D6D006F8D85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF30148299F6D6D006F8D85 /* Assets.xcassets */; };
@@ -18,6 +23,11 @@
 		2EF21A56C61DAD9ED574FAAE /* Pods-RingtoneMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingtoneMaker.debug.xcconfig"; path = "Target Support Files/Pods-RingtoneMaker/Pods-RingtoneMaker.debug.xcconfig"; sourceTree = "<group>"; };
 		640498CA66BBEADD0FC18EDA /* Pods_RingtoneMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RingtoneMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACD56046FD10B94CDC2414C /* Pods-RingtoneMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingtoneMaker.release.xcconfig"; path = "Target Support Files/Pods-RingtoneMaker/Pods-RingtoneMaker.release.xcconfig"; sourceTree = "<group>"; };
+		FEE4A91829A0CBC100C0B0F9 /* Container+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+Dependencies.swift"; sourceTree = "<group>"; };
+		FEE4A91A29A0CC0800C0B0F9 /* Container+Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+Services.swift"; sourceTree = "<group>"; };
+		FEE4A91C29A0CC3600C0B0F9 /* Container+ViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+ViewModels.swift"; sourceTree = "<group>"; };
+		FEE4A92029A0CC7600C0B0F9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FEE4A92329A0CD3C00C0B0F9 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		FEF30141299F6D6B006F8D85 /* RingtoneMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RingtoneMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF30144299F6D6B006F8D85 /* RingtoneMakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingtoneMakerApp.swift; sourceTree = "<group>"; };
 		FEF30146299F6D6B006F8D85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,7 +53,6 @@
 				2EF21A56C61DAD9ED574FAAE /* Pods-RingtoneMaker.debug.xcconfig */,
 				AACD56046FD10B94CDC2414C /* Pods-RingtoneMaker.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -53,6 +62,42 @@
 				640498CA66BBEADD0FC18EDA /* Pods_RingtoneMaker.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEE4A91729A0CB9100C0B0F9 /* Injected */ = {
+			isa = PBXGroup;
+			children = (
+				FEE4A91829A0CBC100C0B0F9 /* Container+Dependencies.swift */,
+				FEE4A91A29A0CC0800C0B0F9 /* Container+Services.swift */,
+				FEE4A91C29A0CC3600C0B0F9 /* Container+ViewModels.swift */,
+			);
+			name = Injected;
+			path = "Ịndected";
+			sourceTree = "<group>";
+		};
+		FEE4A91E29A0CC5A00C0B0F9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FEE4A91F29A0CC6900C0B0F9 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FEE4A91F29A0CC6900C0B0F9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FEE4A92029A0CC7600C0B0F9 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FEE4A92229A0CCE000C0B0F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FEF30148299F6D6D006F8D85 /* Assets.xcassets */,
+				FEE4A92329A0CD3C00C0B0F9 /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		FEF30138299F6D6B006F8D85 = {
@@ -76,9 +121,11 @@
 		FEF30143299F6D6B006F8D85 /* RingtoneMaker */ = {
 			isa = PBXGroup;
 			children = (
+				FEE4A91729A0CB9100C0B0F9 /* Injected */,
+				FEE4A91E29A0CC5A00C0B0F9 /* Scenes */,
 				FEF30144299F6D6B006F8D85 /* RingtoneMakerApp.swift */,
 				FEF30146299F6D6B006F8D85 /* ContentView.swift */,
-				FEF30148299F6D6D006F8D85 /* Assets.xcassets */,
+				FEE4A92229A0CCE000C0B0F9 /* Resources */,
 				FEF3014A299F6D6D006F8D85 /* Preview Content */,
 			);
 			path = RingtoneMaker;
@@ -153,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEF3014C299F6D6D006F8D85 /* Preview Assets.xcassets in Resources */,
+				FEE4A92429A0CD3C00C0B0F9 /* Localizable.strings in Resources */,
 				FEF30149299F6D6D006F8D85 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE4A91D29A0CC3600C0B0F9 /* Container+ViewModels.swift in Sources */,
+				FEE4A91929A0CBC100C0B0F9 /* Container+Dependencies.swift in Sources */,
+				FEE4A91B29A0CC0800C0B0F9 /* Container+Services.swift in Sources */,
+				FEE4A92129A0CC7600C0B0F9 /* HomeView.swift in Sources */,
 				FEF30147299F6D6B006F8D85 /* ContentView.swift in Sources */,
 				FEF30145299F6D6B006F8D85 /* RingtoneMakerApp.swift in Sources */,
 			);

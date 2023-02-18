@@ -1,21 +1,25 @@
 PODS:
+  - SwiftGen (6.6.2)
   - Swinject (2.8.3)
   - SwinjectAutoregistration (2.8.3):
     - Swinject (~> 2.8.3)
 
 DEPENDENCIES:
+  - SwiftGen (~> 6.0)
   - Swinject (= 2.8.3)
   - SwinjectAutoregistration (= 2.8.3)
 
 SPEC REPOS:
   trunk:
+    - SwiftGen
     - Swinject
     - SwinjectAutoregistration
 
 SPEC CHECKSUMS:
+  SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
   Swinject: 893c9a543000ac2f10ee4cbaf0933c6992c935d5
   SwinjectAutoregistration: e3ee378dc458acf78d176fc7fec3902603452667
 
-PODFILE CHECKSUM: 862c6cdc74922508d0f8491e4cbe2510ce182e94
+PODFILE CHECKSUM: 70a49b59170b4ef581e21b0154b382c34acab790
 
 COCOAPODS: 1.11.3

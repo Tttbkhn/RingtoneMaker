@@ -8,5 +8,6 @@ target 'RingtoneMaker' do
   # Pods for RingtoneMaker
   pod 'Swinject', '2.8.3'
   pod 'SwinjectAutoregistration', '2.8.3'
+  pod 'SwiftGen', '~> 6.0'
 
 end
